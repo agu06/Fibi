@@ -17,6 +17,10 @@ def extract_gene_stable_ids(input_file, output_file):
         for gene_id in gene_ids:
             outfile.write(gene_id + '\n')
 
+    # Write the Gene stable IDs to the output file
+    with open(output_file, 'w') as outfile:
+        for gene_id in gene_ids:
+            outfile.write(gene_id + '\n')
 
 def main():
     # Update the input and output file paths
